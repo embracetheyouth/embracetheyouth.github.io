@@ -4,3 +4,11 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+body {
+    background: url(/assets/img/bg.png);
+}
+
+section {
+    height: 100vh;
+}
