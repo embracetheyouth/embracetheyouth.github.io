@@ -17,6 +17,20 @@ section {
     width: 100%;
 }
 
+/* SCROLL START */
+::-webkit-scrollbar{
+    width: 11px;
+    background: white;
+}
+::-webkit-scrollbar-thumb{
+    width: 100%;
+    background: #499FA4;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #86bfc2;
+}
+/* SCROLL END */
+
 /* NAVBAR START */
 nav{
     position: fixed;
@@ -78,8 +92,8 @@ nav ul li#login {
     border-left: solid #499FA4;
     width: 80px;
 }
-
 /* NAVBAR END */
+
 
 /* HOME START */
 .home .container{
@@ -97,18 +111,40 @@ nav ul li#login {
     /* border: solid red; */
     width: 50%;
     height: 100%;
-    
 }
 
-.home .col.kiri {
+.home .col.left {
+    padding-left: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 80px;
 }
 
-.home .col.kiri img {
-    width: 80%;
+.home .col.left img {
+    width: 600px;
     z-index: -1;
+}
+
+.home .col.right {
+/* border: red solid; */
+display: flex;
+justify-content: flex-end;
+align-items: center;
+padding-right: 200px;
+}
+
+.home .col.right .text{
+    font-family: 'Poppins', sans-serif;
+    color: #243D54;
+    text-align: right;
+    z-index: -1;
+}
+
+.home .col.right .text h1 {
+    margin-bottom: 10px;
+    font-size: 70px;
+}
+.home .col.right .text p {
+    font-size: 42px;
 }
 /* HOME END */
