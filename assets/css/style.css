@@ -8,7 +8,10 @@
 }
 
 body {
-    background: url(/assets/img/bg.png);
+    background-image: url(/assets/img/bg.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 100%;
 }
 
 section {
@@ -18,34 +21,38 @@ section {
 }
 
 /* SCROLL START */
-::-webkit-scrollbar{
-    width: 11px;
+::-webkit-scrollbar {
+    width: 7px;
     background: white;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     width: 100%;
     background: #499FA4;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-background: #86bfc2;
+    background: #86bfc2;
 }
+
 /* SCROLL END */
 
 /* NAVBAR START */
-nav{
+nav {
     position: fixed;
     width: 100%;
     height: 60px;
     background: white;
     /* border: red solid; */
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 
 }
-nav .navbar{
+
+nav .navbar {
     display: flex;
     height: 100%;
     width: 100%;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     /* border: solid red; */
     padding: 0 200px;
@@ -66,12 +73,14 @@ nav li {
     display: flex;
     justify-content: end;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
     color: #499FA4;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
 }
+
 nav img {
     width: 100px;
 }
@@ -84,37 +93,39 @@ nav ul button {
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
-    font-weight:bold;
-    cursor: pointer;;
+    font-weight: bold;
+    cursor: pointer;
+    ;
 }
 
 nav ul li#login {
     border-left: solid #499FA4;
     width: 80px;
 }
+
 /* NAVBAR END */
 
 
 /* HOME START */
-.home .container{
-    /* border: red solid; */
+.home .container {
     height: 100%;
     width: 100%;
 }
+
 .home .row {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
+
 .home .col {
-    /* border: solid red; */
     width: 50%;
     height: 100%;
 }
 
 .home .col.left {
-    padding-left: 80px;
+    padding-left: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,14 +137,14 @@ nav ul li#login {
 }
 
 .home .col.right {
-/* border: red solid; */
-display: flex;
-justify-content: flex-end;
-align-items: center;
-padding-right: 200px;
+    /* border: red solid; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 200px;
 }
 
-.home .col.right .text{
+.home .col.right .text {
     font-family: 'Poppins', sans-serif;
     color: #243D54;
     text-align: right;
@@ -143,8 +154,12 @@ padding-right: 200px;
 .home .col.right .text h1 {
     margin-bottom: 10px;
     font-size: 70px;
+    text-align: right;
 }
+
 .home .col.right .text p {
     font-size: 42px;
+    text-align: right;
 }
+
 /* HOME END */
