@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,4 +13,102 @@ body {
 
 section {
     height: 100vh;
+    /* border: blue solid; */
+    width: 100%;
 }
+
+/* NAVBAR START */
+nav{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: white;
+    /* border: red solid; */
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+
+}
+nav .navbar{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content:space-between;
+    align-items: center;
+    /* border: solid red; */
+    padding: 0 200px;
+    z-index: 9999;
+}
+
+nav ul {
+    display: flex;
+    /* border: red solid; */
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 30px;
+    display: flex;
+    justify-content: end;
+}
+nav li a{
+    text-decoration: none;
+    color: #499FA4;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+nav img {
+    width: 100px;
+}
+
+nav ul button {
+    background-color: #499FA4;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight:bold;
+    cursor: pointer;;
+}
+
+nav ul li#login {
+    border-left: solid #499FA4;
+    width: 80px;
+}
+
+/* NAVBAR END */
+
+/* HOME START */
+.home .container{
+    /* border: red solid; */
+    height: 100%;
+    width: 100%;
+}
+.home .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.home .col {
+    border: solid red;
+    width: 50%;
+    height: 100%;
+    
+}
+
+.home .col.kiri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.home .col.kiri img {
+    width: 80%;
+    z-index: -1;
+}
+/* HOME END */
